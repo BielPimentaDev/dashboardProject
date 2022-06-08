@@ -13,5 +13,7 @@ body{
   background-color: #F2F7FB;
   font-family: 'Inter', sans-serif;
   font-family: 'Sarabun', sans-serif;
-  font-weight: 800
+  font-weight: 800;
+  max-width: 1600px;
+  margin: auto;
 }

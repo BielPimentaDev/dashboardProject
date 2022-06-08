@@ -75,7 +75,7 @@
 }
 .lastChart{
     display: flex;
-    
+    flex-wrap: wrap;
     gap: 50px;
     width: 600px;
    
@@ -90,11 +90,3 @@
     max-height: 800px;
 }
 
-@media (max-width: 1500px) {
-    .lastSection{
-        justify-content: space-around;
-    }
-    .lastChart{
-        flex-wrap: wrap;
-    }
-}
