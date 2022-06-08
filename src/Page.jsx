@@ -31,7 +31,7 @@ export default function Page({titlePage}) {
 
     const capChart = [data.capital.min_price, 300, 350, 370, 412, data.capital.prices_avg, 450, 300, 512, 412, 450,data.capital.max_price ]
     const capChart2 = [20, 40, 35, 37, 41, 45, 60,35, 37, 41, 45, 60 ]
-    const alpChart = [data.alphaville.min_price, 500, 450, 300, 512,data.alphaville.prices_avg,  450, 300, 512, 370, 412, 450, data.alphaville.max_price  ]
+    const alpChart = [data.alphaville.min_price, 500, 450, 300, 512,data.alphaville.prices_avg,  450, 300, 512, 370, 412,  data.alphaville.max_price  ]
     const alpChart2 = [28, 50, 45, 30, 51, 65, 55, 35, 37, 41, 45, 60 ]
 
   return (
@@ -52,7 +52,7 @@ export default function Page({titlePage}) {
 
         </section>
 
-        <section className='priceSection'>
+        <section className='priceSection' data-aos="fade-up">
             <div className="firstChartSection">
                 
                    
