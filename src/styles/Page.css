@@ -1,5 +1,9 @@
 
-
+.pageSection{
+    max-width: 1800px;
+    margin: auto;
+    padding:20px
+}
 .titleSection div{
     display: flex;
     align-items: center;
@@ -90,3 +94,12 @@
     max-height: 800px;
 }
 
+footer{
+    color:white;
+    width:100%;
+    padding:50px 0;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: dodgerblue;
+}
