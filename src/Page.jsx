@@ -11,6 +11,9 @@ import {PriceCard} from './components/PriceCard'
 import {GradeCard} from './components/GradeCard'
 import './styles/Page.css'
 import FirstChart from './components/FirstChart'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+
 
 import data from './data.json'
 import { SecondChart } from './components/SecondChart'
@@ -19,7 +22,9 @@ import { SecondChart } from './components/SecondChart'
 export default function Page({titlePage}) { 
     
     
-    
+    useEffect(() =>{
+        Aos.init({duration: 1000})
+    }, [])
     
     const render = data.boolRender
     
@@ -73,13 +78,13 @@ export default function Page({titlePage}) {
 
 
         
-            <div className="lastChart">
+            <div className="lastChart" data-aos="fade-up">
                 <SecondChart datas={titlePage == 'capital' ? capChart2 : alpChart2} render = {render}/>
                 <SecondChart datas={titlePage == 'capital' ? capChart2 : alpChart2} render = {render}/>
             </div>
             
         
-            <img src={titlePage == 'capital' ? capMap : alpMap} alt=""  className='cityMap' />
+            <img data-aos="fade-up" src={titlePage == 'capital' ? capMap : alpMap} alt=""  className='cityMap' />
 
         </div>
     </div>
