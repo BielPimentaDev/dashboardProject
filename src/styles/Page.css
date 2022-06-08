@@ -30,7 +30,7 @@
 .priceSection .firstChartSection{
     width: 60%;
     max-width: 1200px;
-    
+    padding:20px;
     background-color: white;
     height: 100%;
     display: flex;
